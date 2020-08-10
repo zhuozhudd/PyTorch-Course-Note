@@ -4,14 +4,18 @@
 
 <<<<<<< HEAD
 找到 tornado/platform/asyncio.py 文件修改，添加代码如下：
+
+```python
 if sys.platform == 'win32':
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-=======
+ asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 
-### visdom安装
+```
+
+
+
+###  visdom安装
 
 - git clone git@github.com:facebookresearch/visdom.git
 - cd visdom/
 - pip install -e .
->>>>>>> update
