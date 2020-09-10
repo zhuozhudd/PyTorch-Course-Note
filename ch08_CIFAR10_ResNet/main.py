@@ -29,10 +29,10 @@ def main():
     x, label = iter(cifar_train).next()
     print('x: ', x.shape, 'label: ', label.shape)
 
-    # device = torch.device('cuda')
-    # model = LeNet5().to(device)
+    device = torch.device('cuda')
+    model = LeNet5().to(device)
     # model = LeNet5()
-    model = ResNet18()
+    # model = ResNet18()
     print(model)
     # criterion = nn.CrossEntropyLoss().to(device)
     criterion = nn.CrossEntropyLoss()  # 包含了softmax
