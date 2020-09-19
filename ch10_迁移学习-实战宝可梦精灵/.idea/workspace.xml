@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aee47b76-8610-49ac-a9c6-bab820909ca5" name="Default Changelist" comment="" />
+    <list default="true" id="aee47b76-8610-49ac-a9c6-bab820909ca5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/szz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch11_自编码器 Auto-Encoders/.idea/ch11_自编码器 Auto-Encoders.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/ch08_CIFAR10_ResNet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/ch08_CIFAR10_ResNet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/LeNet5.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/LeNet5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/ResNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/ResNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08_CIFAR10_ResNet/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_循环神经网络RNN&amp;LSTM/ch09_RNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_循环神经网络RNN&amp;LSTM/ch09_RNN.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ch10_迁移学习-实战宝可梦精灵.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ch10_迁移学习-实战宝可梦精灵.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/best.mdl" beforeDir="false" afterPath="$PROJECT_DIR$/best.mdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/resnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_transfer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +33,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="441">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resnet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="40" column="33" selection-end-line="98" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_transfer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="75">
+              <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -49,31 +57,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_scratch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="4" column="25" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pokemon_useAPI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="461">
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pokemon.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,49 +80,45 @@
       <find>pokeman</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/pokemon_useAPI.py" />
-        <option value="$PROJECT_DIR$/resnet.py" />
         <option value="$PROJECT_DIR$/pokemon.py" />
-        <option value="$PROJECT_DIR$/train_scratch.py" />
+        <option value="$PROJECT_DIR$/resnet.py" />
         <option value="$PROJECT_DIR$/train_transfer.py" />
+        <option value="$PROJECT_DIR$/train_scratch.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1401" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="26" />
+    <option name="y" value="190" />
+    <option name="width" value="3225" />
+    <option name="height" value="1765" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ch10_迁移学习-实战宝可梦精灵" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ch10_迁移学习-实战宝可梦精灵" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="I:/deep_visuotactile_classification-master/code" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_scratch">
+  <component name="RunManager" selected="Python.train_transfer">
     <configuration name="pokemon" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ch10_迁移学习-实战宝可梦精灵" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -238,11 +221,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_transfer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ch10_迁移学习-实战宝可梦精灵" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_transfer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train_transfer" />
         <item itemvalue="Python.train_scratch" />
-        <item itemvalue="Python.pokemon" />
         <item itemvalue="Python.resnet" />
+        <item itemvalue="Python.pokemon" />
         <item itemvalue="Python.pokemon_useAPI" />
       </list>
     </recent_temporary>
@@ -259,22 +265,23 @@
       <updated>1596681946528</updated>
       <workItem from="1596681954323" duration="10778000" />
       <workItem from="1596766298369" duration="7092000" />
+      <workItem from="1600168726032" duration="8215000" />
+      <workItem from="1600220744869" duration="3554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17870000" />
+    <option name="totallyTimeSpent" value="29639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1401" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2531273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21421371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26658" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22198276" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39921975" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,7 +290,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32769832" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3275862" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -296,66 +303,70 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ch10__$train_scratch.coverage" NAME="train_scratch Coverage Results" MODIFIED="1596814023745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ch10__$pokemon.coverage" NAME="pokemon Coverage Results" MODIFIED="1596811852235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ch10__$resnet.coverage" NAME="resnet Coverage Results" MODIFIED="1596766673796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ch10__$train_transfer.coverage" NAME="train_transfer Coverage Results" MODIFIED="1600221181983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ch10__$train_scratch.coverage" NAME="train_scratch Coverage Results" MODIFIED="1600175599278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ch10__$pokemon_useAPI.coverage" NAME="pokemon_useAPI Coverage Results" MODIFIED="1596704189337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ch10__$pokemon.coverage" NAME="pokemon Coverage Results" MODIFIED="1600170783766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ch10__$resnet.coverage" NAME="resnet Coverage Results" MODIFIED="1600173851694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ch10_迁移学习-实战宝可梦精灵.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pokemon_useAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pokemon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="48">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="58" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pokemon_useAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resnet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="40" column="33" selection-end-line="98" />
+        <state relative-caret-position="-624">
+          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train_scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="25" selection-end-line="80" />
+        <state relative-caret-position="461">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_transfer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

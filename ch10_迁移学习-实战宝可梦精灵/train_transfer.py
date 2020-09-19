@@ -15,7 +15,7 @@ batch_size = 32
 lr = 1e-3
 epoches = 10
 
-# device = torch.device('cuda')
+device = torch.device('cuda')
 torch.manual_seed(1234)
 
 train_db = Pokemon('../data/pokemon', 224, mode='train')
@@ -32,7 +32,7 @@ def evalute(model, loader):
     correct = 0
     total = len(loader.dataset)
     for x, y in loader:
-        # x,y = x.to(device),y.to(device)
+        x, y = x.to(device), y.to(device)
         with torch.no_grad():
             logits = model(x)
             pred = logits.argmax(dim=1)
@@ -48,7 +48,7 @@ def main():
                           Flatten(),  # [b,512,1,1]->[b,512]
                           nn.Linear(512, 5)
                           )  # 迁移学习
-    # model = model.to(device)
+    model = model.to(device)
     # x = torch.randn(2,3,224,224)
     # print(model(x).shape)
 
@@ -57,13 +57,14 @@ def main():
 
     best_acc, best_epoch = 0, 0
     global_step = 0
+
     viz.line([0], [-1], win='loss', opts=dict(title='loss'))
     viz.line([0], [-1], win='val_acc', opts=dict(title='val_acc'))
 
     for epoch in range(epoches):
         for step, (x, y) in enumerate(train_loader):
             # x:[b,3,224,224,] y:[b]
-            # x,y = x.to(device),y.to(device)
+            x, y = x.to(device), y.to(device)
             logits = model(x)
             loss = criterion(logits, y)
 
@@ -75,17 +76,17 @@ def main():
             global_step += 1
 
         # validation
-        if epoch % 2 == 0:
+        if epoch % 1 == 0:
             val_acc = evalute(model, val_loader)
             if val_acc > best_acc:
                 best_epoch = epoch
                 best_acc = val_acc
-                torch.save(model.state_dict(), 'best.mdl')  # 保存模型
+                torch.save(model.state_dict(), 'best_for_transfer.mdl')  # 保存模型
 
-                viz.line([val_acc], [global_step], win='loss', update='append')
+                viz.line([val_acc], [global_step], win='val_acc', update='append')
 
     print('best acc: ', best_acc, ' best epoch: ', best_epoch)
-    model.load_state_dict(torch.load('best.mdl'))
+    model.load_state_dict(torch.load('best_for_transfer.mdl'))
     print('loader from ckpt!')
 
     test_acc = evalute(model, test_loader)

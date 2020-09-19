@@ -53,12 +53,12 @@ class ResNet18(nn.Module):
             nn.BatchNorm2d(16)
         )
         # followed 4 blocks
-        self.blk1 = ResBlock(16, 32, stride=3)
-        self.blk2 = ResBlock(32, 64, stride=3)
-        self.blk3 = ResBlock(64, 128, stride=2)
-        self.blk4 = ResBlock(128, 256, stride=2)
+        self.blk1 = ResBlock(16, 32, stride=3)   # [b,16,h,w] -> [b,32,h,3]
+        self.blk2 = ResBlock(32, 64, stride=3)   # [b,32,h,w] -> [b,64,h,w]
+        self.blk3 = ResBlock(64, 128, stride=2)  # [b,64,h,w] -> [b,128,h,w]
+        self.blk4 = ResBlock(128, 256, stride=2)  # [b,128,h,w] -> [b,256,h,w]
 
-        self.outlayer = nn.Linear(256 * 3 * 3, num_class)
+        self.outlayer = nn.Linear(256 * 3 * 3, num_class)  # [b,256,7,7]
 
     def forward(self, x):
         """
@@ -85,7 +85,7 @@ def main():
     out = blk(temp)
     print('block: ', out.shape)
 
-    model = ResNet18(5)
+    model = ResNet18(5)  # 5类 num_class
     temp = torch.randn(2, 3, 224, 224)
     out = model(temp)
     print('resnet:', out.shape)

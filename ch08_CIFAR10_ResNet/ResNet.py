@@ -21,6 +21,7 @@ class ResBlock(nn.Module):
         self.bn2 = nn.BatchNorm2d(channel_out)
 
         self.extra = nn.Sequential()
+
         if channel_out != channel_in:
             # [b,ch_in,h,w] -> [b,ch_out,h,w]
             self.extra = nn.Sequential(
@@ -48,20 +49,20 @@ class ResNet18(nn.Module):
         super(ResNet18, self).__init__()
 
         self.conv1 = nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size=3, stride=3, padding=0),
+            nn.Conv2d(3, 64, kernel_size=3, stride=3, padding=1),
             nn.BatchNorm2d(64)
         )
         # followed 4 blocks
         # [b,64,h,w] -> [b,128,h,w]
-        self.blk1 = ResBlock(64, 128,stride=2)
+        self.blk1 = ResBlock(64, 128, stride=2)
         # [b,128,h,w] -> [b,256,h,w]
-        self.blk2 = ResBlock(128, 256,stride=2)
+        self.blk2 = ResBlock(128, 256, stride=2)
         # [b,256,h,w] -> [b,512,h,w]
-        self.blk3 = ResBlock(256, 512,stride=2)
+        self.blk3 = ResBlock(256, 512, stride=2)
         # [b,512,h,w] -> [b,1024,h,w]
-        self.blk4 = ResBlock(512, 512,stride=2)
+        self.blk4 = ResBlock(512, 512, stride=2)
 
-        self.outlayer = nn.Linear(512*1*1, 10)
+        self.outlayer = nn.Linear(512, 10)
 
     def forward(self, x):
         """
@@ -76,11 +77,11 @@ class ResNet18(nn.Module):
         x = self.blk3(x)
         x = self.blk4(x)
 
-        # print('after conv: ',x.shape) # [b,512,2,2]
+        # print('after conv: ', x.shape)  # [b,512,2,2]
         # [b,512,h,w] -> [b,512,1,1]
-        x = F.adaptive_avg_pool2d(x,[1,1])
+        x = F.adaptive_avg_pool2d(x, [1, 1])
         # print('after adaptive_avg_pool2d: ', x.shape)
-        x = x.view(x.size(0),-1)
+        x = x.view(x.size(0), -1)
         x = self.outlayer(x)
 
         return x
@@ -90,12 +91,13 @@ def main():
     blk = ResBlock(64, 128, stride=4)
     temp = torch.randn(2, 64, 32, 32)
     out = blk(temp)
-    print('block: ',out.shape)
+    print('block: ', out.shape)
 
-    x = torch.randn(2,3,32,32) # 两张3通道32像素图片
+    x = torch.randn(2, 3, 32, 32)
     model = ResNet18()
     out = model(x)
-    print('ResNet: ',out.shape)
+    print('Resnet: ', out.shape)
+
 
 if __name__ == '__main__':
     main()
